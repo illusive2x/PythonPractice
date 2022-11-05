@@ -30,9 +30,8 @@ def generate_passwords():
 
 
 def run():
-    print('Welcome to Password Generator\n')
+    print('Welcome to Password Generator')
     passwords = generate_passwords()
-    print('')
     print(*passwords, sep= '\n')
 
 
