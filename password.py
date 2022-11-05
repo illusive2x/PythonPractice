@@ -14,12 +14,9 @@ def get_passwords_length():
 
 
 # function to generate the passwords
-def generate_passwords():
-    num_passwords = get_number_passwords()
-    password_length = get_passwords_length()
-
+def generate_passwords(num_passwords, password_length):
+    
     letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
-
     passwords = []
 
     for i in range(num_passwords):
@@ -31,7 +28,9 @@ def generate_passwords():
 
 def run():
     print('Welcome to Password Generator')
-    passwords = generate_passwords()
+    num_passwords = get_number_passwords()
+    password_length = get_passwords_length()
+    passwords = generate_passwords(num_passwords, password_length)
     print(*passwords, sep= '\n')
 
 

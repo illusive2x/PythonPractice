@@ -10,10 +10,15 @@ def main_menu():
     print("Enter 'r' for rock \nEnter 'p' for paper \nEnter 's' for scissors\n")
 
 
-def play():
-    choice = computer_choice()
-    main_menu()
+def user_input():
     user = input("Enter you choice: ")
+    return user
+
+
+def play():
+    main_menu()
+    choice = computer_choice()
+    user = user_input()
 
     winner(user, choice)
 
