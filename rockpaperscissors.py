@@ -1,3 +1,10 @@
+"""
+
+Plays a game of rock, paper, scissors
+between the user and the computer.
+
+"""
+
 import random
 
 def computer_choice():
@@ -19,7 +26,6 @@ def play():
     main_menu()
     choice = computer_choice()
     user = user_input()
-
     winner(user, choice)
 
 

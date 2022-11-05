@@ -1,3 +1,10 @@
+"""
+
+Generate the number of passwords and the length
+given the user input
+
+"""
+
 import random
 
 
