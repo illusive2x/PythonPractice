@@ -12,7 +12,7 @@ def computer_choice():
     choice = random.choice(['r', 'p', 's'])
     return choice
 
-# function to print the programs main menu
+# function to print the programs main menu and description of input
 def main_menu():
     print("LET'S PLAY ROCK PAPER SCISSOR\n")
     print("Enter 'r' for rock \nEnter 'p' for paper \nEnter 's' for scissors\n")
