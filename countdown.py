@@ -7,3 +7,4 @@ for i in reversed(range(count_seconds + 1)):
         time.sleep(1)
     else:
         print('Start')
+print("hello world")
