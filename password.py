@@ -30,7 +30,7 @@ def generate_passwords(num_passwords, password_length):
         passwords.append(password)
     return passwords
 
-
+# function to merge all functions together
 def run():
     print('Welcome to Password Generator')
     num_passwords = get_number_passwords()
