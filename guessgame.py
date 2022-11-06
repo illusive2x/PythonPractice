@@ -41,7 +41,6 @@ def play():
             print('Your guess was higher -- try again.\n')
 
         attempts += 1
-    
 
 
 if __name__ == '__main__':
