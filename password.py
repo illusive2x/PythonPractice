@@ -28,7 +28,6 @@ def generate_passwords(num_passwords, password_length):
     for i in range(num_passwords):
         password = ''.join(random.sample(letters, password_length))
         passwords.append(password)
-
     return passwords
 
 
