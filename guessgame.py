@@ -42,5 +42,5 @@ def play():
         attempts += 1
 
 
-if __name__ == '__main__':
-    play()
+# call the play function to run the game
+play()

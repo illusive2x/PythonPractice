@@ -41,5 +41,6 @@ def winner(player, opponent):
         print("\nYou lose!")
         print(f"Computer: {opponent} \nUser: {player}")
 
-if __name__ == '__main__':
-    play()
+
+# call the play function to run the program
+play()

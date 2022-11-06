@@ -39,5 +39,5 @@ def run():
     print(*passwords, sep= '\n')
 
 
-if __name__ == '__main__':
-    run()
+# call the run function to runt the program
+run()

@@ -38,5 +38,5 @@ def run():
     check_number(numbers)
 
 
-if __name__ == '__main__':
-    run()
+# call the run function to run the program
+run()
