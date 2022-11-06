@@ -22,7 +22,6 @@ def get_passwords_length():
 
 # function to generate the passwords
 def generate_passwords(num_passwords, password_length):
-    
     letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
     passwords = []
 
