@@ -73,5 +73,5 @@ def main():
         make_selection(selection, list)
         
         
-
-main()
+if __name__ == '__main__':
+    main()
