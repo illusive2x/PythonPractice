@@ -4,6 +4,7 @@ This Program will create a guest list from the user
 and allow the user to remove the guest or add a new one.
 
 """
+import time
 
 # function to print the title fo the program
 def title():
@@ -35,7 +36,9 @@ def get_list_size(list):
     return f"\nNumber of guests: {size}\n"
 
 # function get the user's selection
-def get_user_selection():
+def get_user_selection(list):
+    time.sleep(1)
+    print(get_list_size(list))
     print("1. Add a guest")
     print("2. Remove a guest")
     print("3. Print the list")
@@ -68,8 +71,7 @@ def main():
     list = []
     title()
     while True:
-        print(get_list_size(list))
-        selection = get_user_selection()
+        selection = get_user_selection(list)
         make_selection(selection, list)
         
         
