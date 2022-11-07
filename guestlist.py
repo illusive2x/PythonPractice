@@ -29,9 +29,14 @@ def remove_guest(list):
 def print_list(list):
     print(f"\n{list}")
 
+# function to the size of the guest list
+def get_list_size(list):
+    size = len(list)
+    return f"\nNumber of guests: {size}\n"
+
 # function get the user's selection
 def get_user_selection():
-    print("\n1. Add a guest")
+    print("1. Add a guest")
     print("2. Remove a guest")
     print("3. Print the list")
     print("4. Exit")
@@ -63,8 +68,10 @@ def main():
     list = []
     title()
     while True:
+        print(get_list_size(list))
         selection = get_user_selection()
         make_selection(selection, list)
+        
         
 
 main()
