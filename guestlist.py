@@ -18,7 +18,7 @@ def clear():
     # for mac and linux   
     else:
         _ = system('clear')
-        
+
 # function to print the title of the program
 def title():
     print("Welcome to the Guest List program")
@@ -31,32 +31,26 @@ def add_guest(list):
     guest = input("Enter a guest to add: ")
     print(f"Adding '{guest}' to the guest list ...")
     list.append(guest)
-    sleep(2)
 
 # function to remove a guest from the list
 def remove_guest(list):
     if not list:
         print("List is empty!")
-        sleep(2)
     else:
-        print(f"\n{list}")
+        print(*list, sep=", ")
         guest = input("Enter a guest to remove: ")
         if guest not in list:
             print(f"'{guest}' is not in the list!")
-            sleep(2)
         else:
             print(f"Removing '{guest}' from the guest list ...")
             list.remove(guest)
-            sleep(2)
 
 # function to print the list
 def print_list(list):
     if not list:
         print("List is empty!")
-        sleep(2)
     else:
         print(*list, sep=", ")
-        sleep(2)
 
 # function to the size of the guest list
 def get_list_size(list):
@@ -82,11 +76,10 @@ def make_selection(selection, list):
         print_list(list)
     elif selection == 4:
         print("Exiting program ...")
-        sleep(2)
         exit()
     else:
         print("Invalid selection!")
-        sleep(2)
+    sleep(2)
 
 #create a function to exit the program
 def exit_program():
