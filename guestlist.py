@@ -18,8 +18,7 @@ def clear():
     # for mac and linux   
     else:
         _ = system('clear')
-
-
+        
 # function to print the title of the program
 def title():
     print("Welcome to the Guest List program")
