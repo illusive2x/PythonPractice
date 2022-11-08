@@ -95,7 +95,6 @@ def exit_program():
     if exit == "y":
         return True
 
-
 # function to run the program
 def main():
     list = []
