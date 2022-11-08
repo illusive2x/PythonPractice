@@ -4,12 +4,8 @@ This Program will create a guest list from the user
 and allow the user to remove the guest or add a new one.
 
 """
-<<<<<<< HEAD
-import time
-=======
 # import only system from os
 from os import system, name
->>>>>>> db7acec (added clear screen and timer for output)
 
 # import sleep to show output for some time
 from time import sleep
@@ -69,9 +65,7 @@ def get_list_size(list):
     return f"Number of guests: {size}\n"
 
 # function get the user's selection
-def get_user_selection(list):
-    time.sleep(1)
-    print(get_list_size(list))
+def get_user_selection():
     print("1. Add a guest")
     print("2. Remove a guest")
     print("3. Print the list")
@@ -107,13 +101,6 @@ def main():
     list = []
     title()
     while True:
-<<<<<<< HEAD
-        selection = get_user_selection(list)
-        make_selection(selection, list)
-        
-        
-if __name__ == '__main__':
-=======
         clear()
         print(get_list_size(list))
         selection = get_user_selection()
@@ -121,5 +108,4 @@ if __name__ == '__main__':
         
         
 if __name__ == "__main__":
->>>>>>> db7acec (added clear screen and timer for output)
     main()
